@@ -1,0 +1,124 @@
+.block1 {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s; }
+
+.block2 {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s; }
+
+.block3 {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s; }
+
+.block4 {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s; }
+
+.block5 {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  height: 100vh;
+  overflow: hidden; }
+  .grid .container-block {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden; }
+    .grid .container-block .block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; }
+    .grid .container-block .block1 {
+      background-color: #244f75;
+      -webkit-animation-name: block1;
+      animation-name: block1; }
+    .grid .container-block .block2 {
+      background-color: #60bfbf;
+      -webkit-animation-name: block2;
+      animation-name: block2; }
+    .grid .container-block .block3 {
+      background-color: #8c4b7e;
+      -webkit-animation-name: block3;
+      animation-name: block3; }
+    .grid .container-block .block4 {
+      background-color: #f8bb44;
+      -webkit-animation-name: block4;
+      animation-name: block4; }
+    .grid .container-block .block5 {
+      background-color: #f24b4b;
+      -webkit-animation-name: block5;
+      animation-name: block5; }
+    .grid .container-block h1 {
+      color: #fff;
+      font-weight: 400;
+      font-size: 4rem; }
+    .grid .container-block .block:hover:before {
+      transform: skew(30deg) scale(3) translate3d(0, 0);
+      opacity: 0.1;
+      transform: scale(2); }
+    .grid .container-block .block:before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      opacity: 0.04;
+      transform-origin: center center;
+      transform: skew(30deg) scaleY(1) translate(0, 0);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+    .grid .container-block span {
+      margin-left: 0.3em;
+      font-size: 90%; }
+
+@keyframes block1 {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes block2 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes block3 {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes block4 {
+  0% {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@keyframes block5 {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
+/*# sourceMappingURL=styles.css.map */

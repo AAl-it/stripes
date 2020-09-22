@@ -1,0 +1,11 @@
+@mixin animation-name($name) {
+    -webkit-animation-name: $name;
+    animation-name: $name;
+}
+
+@for $time from 1 to 6 {
+    .block#{$time} {
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+    }
+}
